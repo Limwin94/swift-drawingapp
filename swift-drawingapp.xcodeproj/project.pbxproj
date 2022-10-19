@@ -19,6 +19,7 @@
 		E836AC8629003B2000CA54E3 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8529003B2000CA54E3 /* Line.swift */; };
 		E836AC8929003B7C00CA54E3 /* RandomColorRenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8829003B7C00CA54E3 /* RandomColorRenerator.swift */; };
 		E836AC8C2900429800CA54E3 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8B2900429800CA54E3 /* Point.swift */; };
+		E836AC8E2900440300CA54E3 /* DrawingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8D2900440300CA54E3 /* DrawingObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E836AC8529003B2000CA54E3 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		E836AC8829003B7C00CA54E3 /* RandomColorRenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorRenerator.swift; sourceTree = "<group>"; };
 		E836AC8B2900429800CA54E3 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		E836AC8D2900440300CA54E3 /* DrawingObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		E836AC8729003B6900CA54E3 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				E836AC8D2900440300CA54E3 /* DrawingObject.swift */,
 				E836AC8829003B7C00CA54E3 /* RandomColorRenerator.swift */,
 			);
 			path = Protocol;
@@ -307,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A846E528725EFA00C777B1 /* DrawingBoardViewController.swift in Sources */,
+				E836AC8E2900440300CA54E3 /* DrawingObject.swift in Sources */,
 				83A846E128725EFA00C777B1 /* AppDelegate.swift in Sources */,
 				83A846E328725EFA00C777B1 /* SceneDelegate.swift in Sources */,
 				E836AC8929003B7C00CA54E3 /* RandomColorRenerator.swift in Sources */,
