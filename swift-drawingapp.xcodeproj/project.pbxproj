@@ -20,6 +20,7 @@
 		E836AC8929003B7C00CA54E3 /* RandomColorRenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8829003B7C00CA54E3 /* RandomColorRenerator.swift */; };
 		E836AC8C2900429800CA54E3 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8B2900429800CA54E3 /* Point.swift */; };
 		E836AC8E2900440300CA54E3 /* DrawingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8D2900440300CA54E3 /* DrawingObject.swift */; };
+		E836AC902900471900CA54E3 /* DrawingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8F2900471900CA54E3 /* DrawingUseCase.swift */; };
 		E836AC922900489500CA54E3 /* DrawingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC912900489500CA54E3 /* DrawingType.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		E836AC8829003B7C00CA54E3 /* RandomColorRenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorRenerator.swift; sourceTree = "<group>"; };
 		E836AC8B2900429800CA54E3 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		E836AC8D2900440300CA54E3 /* DrawingObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingObject.swift; sourceTree = "<group>"; };
+		E836AC8F2900471900CA54E3 /* DrawingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUseCase.swift; sourceTree = "<group>"; };
 		E836AC912900489500CA54E3 /* DrawingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 		E836AC812900317100CA54E3 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				E836AC8F2900471900CA54E3 /* DrawingUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				E836AC8E2900440300CA54E3 /* DrawingObject.swift in Sources */,
 				83A846E128725EFA00C777B1 /* AppDelegate.swift in Sources */,
 				83A846E328725EFA00C777B1 /* SceneDelegate.swift in Sources */,
+				E836AC902900471900CA54E3 /* DrawingUseCase.swift in Sources */,
 				E836AC8929003B7C00CA54E3 /* RandomColorRenerator.swift in Sources */,
 				E836AC922900489500CA54E3 /* DrawingType.swift in Sources */,
 				E836AC8C2900429800CA54E3 /* Point.swift in Sources */,
