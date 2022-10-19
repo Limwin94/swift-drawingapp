@@ -7,6 +7,20 @@
 
 import UIKit
 
-struct Line: RandomColorRenerator {
-  var paths: [CGPoint]
+struct Line: DrawingObject, RandomColorRenerator {
+  var id: Int {
+    self.hashValue
+  }
+  
+  var path: [Point]
+}
+
+extension Line: Hashable {
+  static func == (lhs: Line, rhs: Line) -> Bool {
+      return lhs.id == rhs.id
+  }
+  
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(self.path)
+  }
 }
