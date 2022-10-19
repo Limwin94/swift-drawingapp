@@ -18,6 +18,7 @@
 		E836AC84290031BA00CA54E3 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC83290031BA00CA54E3 /* Rectangle.swift */; };
 		E836AC8629003B2000CA54E3 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8529003B2000CA54E3 /* Line.swift */; };
 		E836AC8929003B7C00CA54E3 /* RandomColorRenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8829003B7C00CA54E3 /* RandomColorRenerator.swift */; };
+		E836AC8C2900429800CA54E3 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8B2900429800CA54E3 /* Point.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E836AC83290031BA00CA54E3 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 		E836AC8529003B2000CA54E3 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		E836AC8829003B7C00CA54E3 /* RandomColorRenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorRenerator.swift; sourceTree = "<group>"; };
+		E836AC8B2900429800CA54E3 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			children = (
 				E836AC83290031BA00CA54E3 /* Rectangle.swift */,
 				E836AC8529003B2000CA54E3 /* Line.swift */,
+				E836AC8B2900429800CA54E3 /* Point.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				83A846E128725EFA00C777B1 /* AppDelegate.swift in Sources */,
 				83A846E328725EFA00C777B1 /* SceneDelegate.swift in Sources */,
 				E836AC8929003B7C00CA54E3 /* RandomColorRenerator.swift in Sources */,
+				E836AC8C2900429800CA54E3 /* Point.swift in Sources */,
 				E836AC84290031BA00CA54E3 /* Rectangle.swift in Sources */,
 				E836AC8629003B2000CA54E3 /* Line.swift in Sources */,
 			);
