@@ -7,16 +7,11 @@
 
 import Foundation
 
-enum DrawingType {
-  case rect
-  case line
+enum DrawingType: String {
+  case rect = "사각형"
+  case line = "드로잉"
   
-  mutating func toggle() {
-    switch self {
-    case .rect:
-      self = .line
-    case .line:
-      self = .rect
-    }
+  var name: String {
+    self.rawValue
   }
 }
