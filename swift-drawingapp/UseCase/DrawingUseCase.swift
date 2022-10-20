@@ -13,7 +13,7 @@ final class DrawingUseCase {
   func changeType(_ currentType: DrawingType) -> DrawingType {
     var type = currentType
     type.toggle()
+  func makeRectangle(action: AddRectangleAction?) {
     
-    return type
   }
 }

@@ -74,5 +74,16 @@ final class DrawingBoardViewController: UIViewController {
   private func configureView() {
     self.view.backgroundColor = .white
   }
+  
+  private func configureDrawingButton() {
+    self.rectangleModeButton.addTarget(self, action: #selector(self.doneButtonAction), for: .touchUpInside)
+    
+    self.lineModeButton.addTarget(self, action: #selector(self.doneButtonAction), for: .touchUpInside)
+  }
+  
+  @objc private func doneButtonAction(_ sender: DrawingModeButton) {
+    self.viewModel.didSelectType(sender.type)
+  }
+  
 }
 
