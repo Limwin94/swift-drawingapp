@@ -23,6 +23,7 @@
 		E836AC902900471900CA54E3 /* DrawingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8F2900471900CA54E3 /* DrawingUseCase.swift */; };
 		E836AC922900489500CA54E3 /* DrawingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC912900489500CA54E3 /* DrawingType.swift */; };
 		E836AC972900675900CA54E3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E836AC962900675900CA54E3 /* SnapKit */; };
+		E836AC9B290116B800CA54E3 /* DrawingModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC9A290116B800CA54E3 /* DrawingModeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		E836AC8D2900440300CA54E3 /* DrawingObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingObject.swift; sourceTree = "<group>"; };
 		E836AC8F2900471900CA54E3 /* DrawingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUseCase.swift; sourceTree = "<group>"; };
 		E836AC912900489500CA54E3 /* DrawingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingType.swift; sourceTree = "<group>"; };
+		E836AC9A290116B800CA54E3 /* DrawingModeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingModeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				83A846E428725EFA00C777B1 /* DrawingBoardViewController.swift */,
+				E836AC9A290116B800CA54E3 /* DrawingModeButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				83A846E528725EFA00C777B1 /* DrawingBoardViewController.swift in Sources */,
 				E836AC8E2900440300CA54E3 /* DrawingObject.swift in Sources */,
 				83A846E128725EFA00C777B1 /* AppDelegate.swift in Sources */,
+				E836AC9B290116B800CA54E3 /* DrawingModeButton.swift in Sources */,
 				83A846E328725EFA00C777B1 /* SceneDelegate.swift in Sources */,
 				E836AC902900471900CA54E3 /* DrawingUseCase.swift in Sources */,
 				E836AC8929003B7C00CA54E3 /* RandomColorRenerator.swift in Sources */,
