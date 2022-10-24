@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DrawingObject {
-  var id: Int { get }
-  var path: [Point] { get set }
+protocol DrawingObject: Identifiable {
+  var id: UUID { get }
+  var colorRGB: RGBColor { get }
 }
