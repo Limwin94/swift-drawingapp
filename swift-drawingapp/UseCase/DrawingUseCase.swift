@@ -7,13 +7,26 @@
 
 import Foundation
 
-final class DrawingUseCase {
+protocol DrawingUseCaseProtocol {
+  func makeRectangle(canvas: Size) -> Rectangle
+}
+
+final class DrawingUseCase: DrawingUseCaseProtocol {
   
-  // 사각형, 드로잉 타입을 선택한다.
-  func changeType(_ currentType: DrawingType) -> DrawingType {
-    var type = currentType
-    type.toggle()
-  func makeRectangle(action: AddRectangleAction?) {
-    
+  private let rectSize: Size
+  
+  init(rectSize: Size) {
+    self.rectSize = rectSize
   }
+  
+  func makeRectangle(canvas: Size) -> Rectangle {
+    let xPoint = Double.random(in: 0...canvas.width - rectSize.width)
+    let yPoint = Double.random(in: 0...canvas.height - rectSize.height)
+    
+    let point = Point(x: xPoint, y: yPoint)
+    let rectangle = Rectangle(size: self.rectSize, point: point)
+    
+    return rectangle
+  }
+
 }
