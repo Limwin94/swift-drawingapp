@@ -12,22 +12,17 @@ typealias AddLineAction = ((Line) -> Void)
 
 final class DrawingViewModel {
   
-  private let usecase: DrawingUseCase
+  private let usecase: DrawingUseCaseProtocol
   
   var addRectangle: AddRectangleAction?
   var addLine: AddLineAction?
   
-  init(usecase: DrawingUseCase) {
+  init(usecase: DrawingUseCaseProtocol) {
     self.usecase = usecase
   }
   
-  func didSelectType(_ type: DrawingType) {
-    switch type {
-    case .rect:
-      self.usecase.makeRectangle(action: addRectangle)
-    case .line:
-      break
-    }
+  func didSelectRectangle(in canvas: Size) {
+    let rectangle = self.usecase.makeRectangle(canvas: canvas)
+    self.addRectangle?(rectangle)
   }
-  
 }
