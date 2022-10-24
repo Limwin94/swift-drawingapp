@@ -17,7 +17,7 @@
 		83A8470428725EFF00C777B1 /* swift_drawingappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8470328725EFF00C777B1 /* swift_drawingappUITestsLaunchTests.swift */; };
 		E836AC84290031BA00CA54E3 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC83290031BA00CA54E3 /* Rectangle.swift */; };
 		E836AC8629003B2000CA54E3 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8529003B2000CA54E3 /* Line.swift */; };
-		E836AC8929003B7C00CA54E3 /* RandomColorRenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8829003B7C00CA54E3 /* RandomColorRenerator.swift */; };
+		E836AC8929003B7C00CA54E3 /* RandomSystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8829003B7C00CA54E3 /* RandomSystemColor.swift */; };
 		E836AC8C2900429800CA54E3 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8B2900429800CA54E3 /* Point.swift */; };
 		E836AC8E2900440300CA54E3 /* DrawingObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8D2900440300CA54E3 /* DrawingObject.swift */; };
 		E836AC902900471900CA54E3 /* DrawingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8F2900471900CA54E3 /* DrawingUseCase.swift */; };
@@ -59,7 +59,7 @@
 		83A8470328725EFF00C777B1 /* swift_drawingappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_drawingappUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E836AC83290031BA00CA54E3 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 		E836AC8529003B2000CA54E3 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
-		E836AC8829003B7C00CA54E3 /* RandomColorRenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorRenerator.swift; sourceTree = "<group>"; };
+		E836AC8829003B7C00CA54E3 /* RandomSystemColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSystemColor.swift; sourceTree = "<group>"; };
 		E836AC8B2900429800CA54E3 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		E836AC8D2900440300CA54E3 /* DrawingObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingObject.swift; sourceTree = "<group>"; };
 		E836AC8F2900471900CA54E3 /* DrawingUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUseCase.swift; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				E836AC8D2900440300CA54E3 /* DrawingObject.swift */,
-				E836AC8829003B7C00CA54E3 /* RandomColorRenerator.swift */,
+				E836AC8829003B7C00CA54E3 /* RandomSystemColor.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -335,7 +335,7 @@
 				E836AC9B290116B800CA54E3 /* DrawingModeButton.swift in Sources */,
 				83A846E328725EFA00C777B1 /* SceneDelegate.swift in Sources */,
 				E836AC902900471900CA54E3 /* DrawingUseCase.swift in Sources */,
-				E836AC8929003B7C00CA54E3 /* RandomColorRenerator.swift in Sources */,
+				E836AC8929003B7C00CA54E3 /* RandomSystemColor.swift in Sources */,
 				E836AC922900489500CA54E3 /* DrawingType.swift in Sources */,
 				E836AC9429004E4F00CA54E3 /* DrawingViewModel.swift in Sources */,
 				E836AC8C2900429800CA54E3 /* Point.swift in Sources */,

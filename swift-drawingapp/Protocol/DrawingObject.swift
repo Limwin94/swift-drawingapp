@@ -9,5 +9,5 @@ import Foundation
 
 protocol DrawingObject: Identifiable {
   var id: UUID { get }
-  var colorRGB: RGBColor { get }
+  var color: RandomSystemColor { get }
 }

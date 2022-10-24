@@ -13,6 +13,9 @@ struct Line: DrawingObject, RandomColorRenerator {
   }
   
   var path: [Point]
+  var color: RandomSystemColor {
+    .init()
+  }
 }
 
 extension Line: Hashable {

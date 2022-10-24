@@ -15,6 +15,9 @@ struct Rectangle: DrawingObject, RandomColorRenerator {
   
   let width: UInt = 100
   let height: UInt = 100
+  var color: RandomSystemColor {
+    .init()
+  }
 }
 
 extension Rectangle: Hashable {
