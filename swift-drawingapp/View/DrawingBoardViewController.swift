@@ -11,6 +11,12 @@ import SnapKit
 
 final class DrawingBoardViewController: UIViewController {
   
+  // MARK: Constant
+  private enum Constant {
+    static let buttonWidth = 200
+    static let buttonHeight = 200
+  }
+  
   // MARK: Property
   private lazy var buttonContainer: UIStackView = {
     let stackView = UIStackView()
@@ -65,11 +71,13 @@ final class DrawingBoardViewController: UIViewController {
     }
     
     self.rectangleModeButton.snp.makeConstraints { make in
-      make.size.equalTo(50)
+      make.width.equalTo(Constant.buttonWidth)
+      make.height.equalTo(Constant.buttonHeight)
     }
     
     self.lineModeButton.snp.makeConstraints { make in
-      make.size.equalTo(50)
+      make.width.equalTo(Constant.buttonWidth)
+      make.height.equalTo(Constant.buttonHeight)
     }
   }
   
