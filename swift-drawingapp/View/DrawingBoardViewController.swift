@@ -28,6 +28,7 @@ final class DrawingBoardViewController: UIViewController {
     self.viewModel = viewModel
     
     super.init(nibName: nil, bundle: nil)
+    self.bind()
   }
   
   required init?(coder: NSCoder) {
@@ -39,8 +40,9 @@ final class DrawingBoardViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.configureView()
     self.addSubviews()
+    self.configureView()
+    self.configureDrawingButton()
   }
   
   override func updateViewConstraints() {
@@ -71,19 +73,56 @@ final class DrawingBoardViewController: UIViewController {
     }
   }
   
+  private func bind() {
+    self.viewModel.addRectangle = { [weak self] rectangle in
+      let rectangleView = ReactangleView(model: rectangle)
+      self?.view.addSubview(rectangleView)
+    }
+  }
+  
   private func configureView() {
     self.view.backgroundColor = .white
   }
   
   private func configureDrawingButton() {
-    self.rectangleModeButton.addTarget(self, action: #selector(self.doneButtonAction), for: .touchUpInside)
-    
-    self.lineModeButton.addTarget(self, action: #selector(self.doneButtonAction), for: .touchUpInside)
+    self.rectangleModeButton.addTarget(
+      self,
+      action: #selector(self.doneButtonAction),
+      for: .touchUpInside
+    )
+    self.lineModeButton.addTarget(
+      self,
+      action: #selector(self.doneButtonAction),
+      for: .touchUpInside
+    )
   }
   
   @objc private func doneButtonAction(_ sender: DrawingModeButton) {
-    self.viewModel.didSelectType(sender.type)
+    let cgSize = self.view.frame.size
+    let size = Size(cgSize)
+    
+    switch sender.type {
+    case .rect:
+      self.viewModel.didSelectRectangle(in: size)
+    case .line:
+      break
+    }
   }
-  
 }
 
+final class ReactangleView: UIView {
+  
+  init(model: Rectangle) {
+    let cgPoint = model.point.toCGPoint()
+    let cgSize = model.size.toCGSize()
+    
+    let frame = CGRect(origin: cgPoint, size: cgSize)
+    super.init(frame: frame)
+    
+    self.backgroundColor = model.color.value
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError()
+  }
+}
