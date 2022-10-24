@@ -10,15 +10,24 @@ import Foundation
 struct Point {
   let x: Double
   let y: Double
-}
-
-extension Point: Hashable {
-  static func == (lhs: Point, rhs: Point) -> Bool {
-    return lhs.x == rhs.x && lhs.y == rhs.y
+  
+  init(x: Double, y: Double) {
+    self.x = x
+    self.y = y
   }
   
-  func hash(into hasher: inout Hasher) {
-    hasher.combine(x)
-    hasher.combine(y)
+  init(cgPoint: CGPoint) {
+    self.x = Double(cgPoint.x)
+    self.y = Double(cgPoint.y)
+  }
+  
+  func toCGPoint() -> CGPoint {
+    .init(x: CGFloat(self.x), y: CGFloat(self.y))
+  }
+}
+
+extension Point: Equatable {
+  static func == (lhs: Point, rhs: Point) -> Bool {
+    return lhs.x == rhs.x && lhs.y == rhs.y
   }
 }
