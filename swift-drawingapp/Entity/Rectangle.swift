@@ -7,28 +7,21 @@
 
 import Foundation
 
-struct Rectangle: DrawingObject, RandomColorRenerator {
-  var id: Int {
-    self.hashValue
+struct Rectangle: DrawingObject {
+  var id: UUID {
+    .init()
   }
-  var path: [Point]
   
-  let width: UInt = 100
-  let height: UInt = 100
   var color: RandomSystemColor {
     .init()
   }
+  
+  let size: Size
+  let point: Point
 }
 
-extension Rectangle: Hashable {
+extension Rectangle: Equatable {
   static func == (lhs: Rectangle, rhs: Rectangle) -> Bool {
       return lhs.id == rhs.id
-  }
-  
-  func hash(into hasher: inout Hasher) {
-    hasher.combine(self.width)
-    hasher.combine(self.height)
-    hasher.combine(self.color)
-    hasher.combine(self.path)
   }
 }

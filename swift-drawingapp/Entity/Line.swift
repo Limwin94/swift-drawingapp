@@ -7,23 +7,20 @@
 
 import UIKit
 
-struct Line: DrawingObject, RandomColorRenerator {
-  var id: Int {
-    self.hashValue
+struct Line: DrawingObject {
+  var id: UUID {
+    .init()
   }
   
-  var path: [Point]
   var color: RandomSystemColor {
     .init()
   }
+  
+  var paths: [Point]
 }
 
-extension Line: Hashable {
+extension Line: Equatable {
   static func == (lhs: Line, rhs: Line) -> Bool {
-      return lhs.id == rhs.id
-  }
-  
-  func hash(into hasher: inout Hasher) {
-    hasher.combine(self.path)
+    return lhs.id == rhs.id
   }
 }
