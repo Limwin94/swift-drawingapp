@@ -16,6 +16,8 @@
 		83A8470228725EFF00C777B1 /* swift_drawingappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8470128725EFF00C777B1 /* swift_drawingappUITests.swift */; };
 		83A8470428725EFF00C777B1 /* swift_drawingappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A8470328725EFF00C777B1 /* swift_drawingappUITestsLaunchTests.swift */; };
 		E8046F122906C18600DE8277 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8046F112906C18600DE8277 /* Size.swift */; };
+		E8046F1429079C6900DE8277 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8046F1329079C6900DE8277 /* RectangleView.swift */; };
+		E8046F18290A833100DE8277 /* DrawingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8046F17290A833100DE8277 /* DrawingRepository.swift */; };
 		E836AC84290031BA00CA54E3 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC83290031BA00CA54E3 /* Rectangle.swift */; };
 		E836AC8629003B2000CA54E3 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8529003B2000CA54E3 /* Line.swift */; };
 		E836AC8929003B7C00CA54E3 /* RandomSystemColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E836AC8829003B7C00CA54E3 /* RandomSystemColor.swift */; };
@@ -59,6 +61,8 @@
 		83A8470128725EFF00C777B1 /* swift_drawingappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_drawingappUITests.swift; sourceTree = "<group>"; };
 		83A8470328725EFF00C777B1 /* swift_drawingappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_drawingappUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E8046F112906C18600DE8277 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		E8046F1329079C6900DE8277 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		E8046F17290A833100DE8277 /* DrawingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingRepository.swift; sourceTree = "<group>"; };
 		E836AC83290031BA00CA54E3 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
 		E836AC8529003B2000CA54E3 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		E836AC8829003B7C00CA54E3 /* RandomSystemColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSystemColor.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 			children = (
 				83A846E428725EFA00C777B1 /* DrawingBoardViewController.swift */,
 				E836AC9A290116B800CA54E3 /* DrawingModeButton.swift */,
+				E8046F1329079C6900DE8277 /* RectangleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				E836AC8F2900471900CA54E3 /* DrawingUseCase.swift */,
+				E8046F17290A833100DE8277 /* DrawingRepository.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -340,10 +346,12 @@
 				E836AC902900471900CA54E3 /* DrawingUseCase.swift in Sources */,
 				E836AC8929003B7C00CA54E3 /* RandomSystemColor.swift in Sources */,
 				E836AC922900489500CA54E3 /* DrawingType.swift in Sources */,
+				E8046F1429079C6900DE8277 /* RectangleView.swift in Sources */,
 				E836AC9429004E4F00CA54E3 /* DrawingViewModel.swift in Sources */,
 				E836AC8C2900429800CA54E3 /* Point.swift in Sources */,
 				E836AC84290031BA00CA54E3 /* Rectangle.swift in Sources */,
 				E836AC8629003B2000CA54E3 /* Line.swift in Sources */,
+				E8046F18290A833100DE8277 /* DrawingRepository.swift in Sources */,
 				E8046F122906C18600DE8277 /* Size.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

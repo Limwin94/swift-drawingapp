@@ -117,20 +117,3 @@ final class DrawingBoardViewController: UIViewController {
     }
   }
 }
-
-final class ReactangleView: UIView {
-  
-  init(model: Rectangle) {
-    let cgPoint = model.point.toCGPoint()
-    let cgSize = model.size.toCGSize()
-    
-    let frame = CGRect(origin: cgPoint, size: cgSize)
-    super.init(frame: frame)
-    
-    self.backgroundColor = model.color.value
-  }
-  
-  required init?(coder: NSCoder) {
-    fatalError()
-  }
-}
