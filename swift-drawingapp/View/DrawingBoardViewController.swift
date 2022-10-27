@@ -13,8 +13,8 @@ final class DrawingBoardViewController: UIViewController {
   
   // MARK: Constant
   private enum Constant {
-    static let buttonWidth = 200
-    static let buttonHeight = 200
+    static let buttonWidth = 150
+    static let buttonHeight = 100
   }
   
   // MARK: Property
@@ -111,7 +111,7 @@ final class DrawingBoardViewController: UIViewController {
     
     switch sender.type {
     case .rect:
-      self.viewModel.didSelectRectangle(in: size)
+      self.viewModel.didSelectRectangleButton(in: size)
     case .line:
       break
     }
