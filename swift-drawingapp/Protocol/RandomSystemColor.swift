@@ -14,7 +14,7 @@ struct RandomSystemColor {
                                          .systemYellow
                                         ]
   
-  var value: UIColor {
+  var element: UIColor {
     self.systemColors.randomElement() ?? .systemGray
   }
 }
