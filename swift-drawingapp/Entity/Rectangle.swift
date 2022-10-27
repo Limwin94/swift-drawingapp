@@ -7,7 +7,14 @@
 
 import Foundation
 
-struct Rectangle: DrawingObject {
+typealias RectangleObject = DrawingObject & RectangleProtocol
+
+protocol RectangleProtocol {
+  var size: Size { get set }
+  var point: Point { get set }
+}
+
+struct Rectangle: RectangleObject {
   var id: UUID {
     .init()
   }
@@ -16,8 +23,8 @@ struct Rectangle: DrawingObject {
     .init()
   }
   
-  let size: Size
-  let point: Point
+  var size: Size
+  var point: Point
 }
 
 extension Rectangle: Equatable {
