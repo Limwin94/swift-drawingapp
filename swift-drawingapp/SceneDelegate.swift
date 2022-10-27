@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     let window = UIWindow(windowScene: windowScene)
     
-    let useCase = DrawingUseCase(rectSize: .init(width: 100, height: 100))
+    let useCase = DrawingUseCase(rectSize: .init(width: 100, height: 100), repository: .init())
     let viewModel = DrawingViewModel(usecase: useCase)
     window.rootViewController = DrawingBoardViewController(viewModel: viewModel)
     
